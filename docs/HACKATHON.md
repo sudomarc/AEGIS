@@ -123,3 +123,24 @@ Before submission, verify all of the following:
 - [ ] The project does not facilitate unlawful harm.
 - [ ] Public GitHub access works (or organizer-private access is configured if required).
 - [ ] Only one final project is submitted.
+
+
+
+## Verified Participant Build Perks
+
+Current ForgeHacks pages state that participant credits/benefits are distributed **at the start of the hackathon so teams can build with them during the event**.
+
+- Featherless AI: **$25 API credits**, described as a full month of unlimited access to **40,000+ open-source AI models**, with no token limits during the benefit period.
+- Momen: **$100 credits**.
+- Adaption: **$500 platform credits**.
+- n8n: **1 month Cloud Pro**.
+- Kariaa: **$40 credits**.
+- DevSwarm Pro: **1 month free**.
+- Tin Computer: **$299 credits per eligible team**, with one month of Growth plan; the current site says this benefit is distributed after the event.
+
+Treat availability and terms as event-provided benefits, not as requirements for the architecture. Verify activation details in the ForgeHacks Discord or organizer announcements at kickoff.
+
+Current official references:
+- https://www.forgehacks.dev/
+- https://forgehacks-2026.devpost.com/
+- https://forgehacks-2026.devpost.com/rules
