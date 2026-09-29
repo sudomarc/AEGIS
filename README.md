@@ -4,62 +4,91 @@
 
 AEGIS is the working repository for our ForgeHacks 2026 submission.
 
-> **Status:** PRE-HACKATHON SCAFFOLD — no prompt-specific product implementation yet.
+> **Status:** PRE-HACKATHON / PROMPT-GATED. The repository contains governance and planning only; the final product is not built yet.
 
-## Competition
+## Competition window
 
-ForgeHacks Online 2026 runs **October 3–10, 2026**.
+- **Kickoff / prompt reveal:** October 3, 2026 — 12:00 PM EST
+- **Hacking ends / submissions lock:** October 10, 2026 — 12:00 PM EST
+- **Judging:** October 10–11
+- **Winners:** October 12, 2026 — 3:00 PM EST
+- **Team size:** 1–4 students
+- **Format:** Fully online, worldwide subject to the published eligibility exceptions
 
-Official rules currently state:
-- Kickoff: **October 3, 12:00 PM EST**
-- Prompt reveal: at kickoff
-- Submission deadline: **October 10, 12:00 PM EST**
-- Judging: October 10–11
-- Winners: October 12, 3:00 PM EST
-- Teams: 1–4 students
-- AI coding tools such as ChatGPT, Claude, and Copilot are allowed.
-- Projects must be substantially created during the hackathon period.
+Official rules: https://forgehacks-2026.devpost.com/rules
+Official site: https://www.forgehacks.dev/
 
-Source: https://forgehacks-2026.devpost.com/rules
+## Design target
 
-## Before kickoff
+AEGIS is optimized against the official judging rubric:
 
-We prepare only the engineering operating system:
-- agent governance;
-- research and decision templates;
-- project structure;
-- environment configuration names;
-- verification conventions;
-- demo/submission checklist.
+1. **Real-World Impact & Relevance** — genuine problem, specific users, credible benefit.
+2. **Technical Implementation & AI Use** — meaningful AI/ML integration, technical depth, correctness; not a thin wrapper.
+3. **Innovation & Creativity** — useful originality or novel combination of technologies.
+4. **Execution & Completeness** — working demo, polish, usability, and substantial hackathon-shipped functionality.
+5. **Presentation & Communication** — clear 2–4 minute video, README, written explanation, and technical evidence.
 
-We do **not** pre-build the final solution before the prompt reveal.
+See docs/SCORECARD.md for acceptance gates.
 
-## During kickoff
+## Candidate product
 
-1. Capture the exact official track prompt.
-2. Map requirements to a narrow, testable product.
-3. Activate at least five independent agent roles.
-4. Select the smallest credible architecture.
-5. Build an end-to-end thin slice first.
-6. Add AI depth and measurable evaluation.
-7. Verify, review, polish, document, and record the demo.
+A prior brainstorm produced a **candidate**, not a commitment: a multimodal AI-assisted cyber-risk analyzer that could analyze a message, URL, screenshot, or QR code, combine deterministic signals with ML/LLM reasoning, explain the evidence, and recommend safe action.
 
-## Repository structure
+This concept is intentionally **prompt-gated** and must be adapted or discarded after the official track prompt is revealed.
 
-```
-AGENTS.md                 # mandatory project governance
-docs/
-  HACKATHON.md            # event constraints and operating checklist
-  DECISIONS.md            # dated technical/product decisions
-  handoffs/               # compact agent-to-agent state transfers
-  research/               # prompt/evidence research
-src/                      # product code during the hackathon
-tests/                    # verification and evaluation
-```
+## Candidate stack
 
-## Source of truth
+**Next.js App Router + TypeScript + Tailwind/shadcn + Zod + Vercel AI SDK + Featherless**, deployed on Vercel, with **Vitest/Playwright** verification. Postgres/Supabase and n8n are optional additions only when justified by the final prompt.
 
-The ForgeHacks rules and prompt are the event authority. The Vibe Coding Instructions repository is the engineering-agent governance authority.
+See docs/STACK.md.
 
-External governance:
+## Operating model
+
+### Pre-hackathon
+Prepare the engineering operating system only:
+- repository governance;
+- external Vibe Coding Instructions;
+- multi-agent role contracts and handoffs;
+- research methodology;
+- candidate architecture/stack;
+- evaluation and submission templates;
+- deployment pathway;
+- environment variable names.
+
+Do **not** implement final prompt-specific product functionality before kickoff.
+
+### During hackathon
+1. Capture the exact prompt.
+2. Validate the problem and target user.
+3. Run at least five independent agent roles.
+4. Choose a narrow golden path.
+5. Build the thin slice end-to-end.
+6. Add meaningful AI depth and evaluation.
+7. Harden security/reliability/UX.
+8. Prepare the 2–4 minute demo and submission.
+9. Verify the final repository and submit once.
+
+## Repository map
+
+- AGENTS.md — mandatory governance and external Vibe Coding Instructions policy.
+- docs/HACKATHON.md — official dates, eligibility, rules, judging rubric, compliance gates, participant tooling.
+- docs/ROADMAP.md — day-by-day build strategy.
+- docs/STACK.md — candidate technical stack and API guardrails.
+- docs/SCORECARD.md — product acceptance gates mapped to judging criteria.
+- docs/AGENT-PLAYBOOK.md — seven-role orchestration model and handoff contract.
+- docs/SUBMISSION.md — final Devpost/GitHub/demo checklist.
+- docs/PARTICIPANT-PERKS.md — verified build-time sponsor benefits and activation guidance.
+- docs/research/RESEARCH-PLAN.md — prompt/problem/competitive/technical research process.
+- docs/research/OFFICIAL-PROMPT.md — exact prompt capture location for kickoff.
+- docs/architecture/CANDIDATE.md — prompt-gated architecture hypothesis.
+- docs/DECISIONS.md — dated decisions and uncertainty.
+- docs/handoffs/ — compact cross-agent state snapshots.
+- src/ — product implementation during the hackathon.
+- tests/ — verification/evaluation during the hackathon.
+
+## Governance source of truth
+
+The external engineering-agent governance source is:
 https://github.com/sudomarc/vibe-coding-instructions
+
+Do not replace it with locally invented agent/skill instructions.
