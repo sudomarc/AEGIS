@@ -94,3 +94,32 @@ The project must be designed and verified against these five judging dimensions:
 
 ### Design rule
 No feature is accepted merely because it is impressive. Each proposed feature must map to one or more rubric dimensions and have a clear verification method.
+
+
+## Eligibility & Submission Constraints
+
+- Eligible participants: current high school, undergraduate, or graduate students worldwide, subject to Devpost's standard global-eligibility exceptions.
+- Team size: 1–4 participants.
+- Minimum age: 13, or the legal age of consent in the participant's jurisdiction.
+- Participants under 18 require parent/legal guardian permission.
+- Organizers, judges, mentors, and immediate family members are not eligible to submit or win.
+- Open-source libraries, public datasets, and pre-trained models are permitted.
+- No unlawful, harmful, or IP-infringing submissions.
+- Every team member must appear on the Devpost submission.
+- AI coding tools (including Copilot, ChatGPT, Claude, etc.) are allowed; this is distinct from the project's own AI/ML usage, which is judged technically.
+- The project must be substantially created during the hackathon. Any pre-existing material must be clearly distinguished from work added during the event.
+- One submission per team; if multiple are submitted, the most recently submitted project is the one judged.
+- Teams retain ownership and IP rights. Submission grants the organizers/sponsors a non-exclusive, royalty-free license to display and promote submission materials in connection with the hackathon.
+
+## AEGIS Compliance Gate
+
+Before submission, verify all of the following:
+
+- [ ] Each team member is listed on Devpost.
+- [ ] The final project substantially reflects work completed during Oct 3–10.
+- [ ] Any pre-hackathon repository scaffolding is clearly separated from hackathon-built product work.
+- [ ] No secret or credential is committed.
+- [ ] Dependencies, datasets, models, and assets have compatible licenses.
+- [ ] The project does not facilitate unlawful harm.
+- [ ] Public GitHub access works (or organizer-private access is configured if required).
+- [ ] Only one final project is submitted.
