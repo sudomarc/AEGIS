@@ -63,3 +63,34 @@ Avoid:
 - pre-recorded final demo;
 - fake evaluation results;
 - claiming pre-kickoff work as hackathon-built functionality.
+
+
+## ForgeHacks Judging Rubric — AEGIS acceptance criteria
+
+The project must be designed and verified against these five judging dimensions:
+
+### 1. Real-World Impact & Relevance
+- Clearly addresses a genuine problem.
+- Has credible potential for actual use or meaningful benefit to users/communities.
+- Prefer evidence, concrete users, and a believable usage scenario over broad claims.
+
+### 2. Technical Implementation & AI Use
+- AI/ML components must be technically meaningful, correct, and integrated into the product.
+- Avoid a thin LLM wrapper.
+- Document model choice, data flow, tools, evaluation, failure handling, and relevant limits.
+
+### 3. Innovation & Creativity
+- Show an original idea, approach, or combination of technologies.
+- Novelty must serve the problem rather than exist as decoration.
+
+### 4. Execution & Completeness
+- Working end-to-end demo is mandatory.
+- Prioritize a coherent, polished golden path over a large unfinished feature set.
+- Verify usability, reliability, and the amount of functionality actually shipped during the hackathon.
+
+### 5. Presentation & Communication
+- 2–4 minute video must explain the problem, solution, AI/technical approach, and impact simply.
+- README and written submission must tell the same story and provide enough technical evidence to reproduce or evaluate the project.
+
+### Design rule
+No feature is accepted merely because it is impressive. Each proposed feature must map to one or more rubric dimensions and have a clear verification method.
