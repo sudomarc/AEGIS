@@ -89,3 +89,18 @@ We are not building:
 - a custom model-serving cluster;
 - a multi-database architecture;
 - infrastructure that does not directly support the hackathon product.
+
+
+
+## Hackathon-provided tooling
+
+The candidate stack is deliberately compatible with the participant perks advertised by ForgeHacks. These are accelerators, not mandatory dependencies.
+
+Preferred use during the event:
+- **Featherless AI** for model experimentation and production AI calls when its current access fits the task.
+- **n8n Cloud Pro** for justified workflow automation or tool orchestration.
+- **Momen / Adaption** only when they materially reduce build time or add required functionality.
+- **DevSwarm** as an AI coding aid if useful to the team.
+- **Tin Computer** is a post-event/after-distribution capability according to the current official site, so do not assume it is available during the build window.
+
+Do not design around a sponsor perk that has not been activated or whose current terms differ from the public page.
